@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Name</title>
+    <link rel = "icon" href = "images/me1.png" type = "image/x-icon" > 
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Saleh</a>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main" id="home">
+        <h4>Hello, I'm Saleh</h4><br>
+        <h1>Mechatronics Engineer</h1><br>
+        <h3>Mechatronics Engineer Shaping IoT Future</h3>
+        <a href="#projects" class="main-btn">View my work</a>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-solid fa-at"></i></a>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/my-pic.png" class="my-pic">
+        </div>
+    </section>
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content"> 
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-house-signal"></i>
+                </div>
+                <div class="info">
+                    <h3>IoT</h3>
+                    <p>Adding IoT stuff</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="info">
+                    <h3>Electroics</h3>
+                    <p>Adding Electronic stuff</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div class="info">
+                    <h3>Mechanical</h3>
+                    <p>Adding Mechanical stuff</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/me.jpg"/>
+                </div>
+                <div class="project-info">
+                    <p class="project-category">IoT</p>
+                    <strong class="project-title">
+                        Project Title 1
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/me1.png"/>
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Mechanical</p>
+                    <strong class="project-title">
+                        Project Title 2
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/me1.png"/>
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Electronics</p>
+                    <strong class="project-title">
+                        Project Title 3
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/me.jpg"/>
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Software</p>
+                    <strong class="project-title">
+                        Project Title 4
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('IoT')">IoT</button>
+            <button onclick="filterProjects('Mechanical')">Mechanical</button>
+            <button onclick="filterProjects('Electronics')">Electronics</button>
+            <button onclick="filterProjects('Software')">Software</button>
+            <!-- Add more buttons for each category -->
+        </div>
+    </section>
+    
+    
+    <section class="contact-cards" id="contact">
+        <h2 class="title">Let's Connect</h2>
+        <div class="content"> 
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+966500000000</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>username@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-solid fa-at"></i></a>
+        </div>
+        <br>
+        <p>Copyright &#169; 2023 Portfolio Name</p>        
+    </footer>
+    
+    <script src="JS.js"></script>
+</body>
+</html>
