@@ -241,28 +241,29 @@ section{
     font-size: 1.5em;
 }
 
-.filter-buttons {
+section.projects .filter-buttons {
     text-align: center;
-    margin-top: 60px; /* adds space above the filter buttons */
+    margin-top: 60px; /* Space between project cards and buttons */
 }
 
-.filter-buttons button {
+section.projects .filter-buttons button {
     background-color: #FF6347;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 25px;
-    margin: 10px;
-    border-radius: 50px; /* makes the buttons oval */
+    margin: 10px 8px;
+    border-radius: 50px; /* Makes it oval */
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.filter-buttons button:hover {
+section.projects .filter-buttons button:hover {
     background-color: #e5533a;
     transform: scale(1.05);
 }
+
 
 
 .footer{
