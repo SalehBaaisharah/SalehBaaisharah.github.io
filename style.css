@@ -247,9 +247,9 @@ section.projects .filter-buttons {
 }
 
 section.projects .filter-buttons button {
-    background-color: transparent;
-    color: #FF6347;
-    border: 2px solid #FF6347;
+    background-color: #FF6347;
+    color: white;
+    border: none;
     padding: 10px 25px;
     margin: 10px 8px;
     border-radius: 50px; /* Makes it oval */
@@ -260,8 +260,7 @@ section.projects .filter-buttons button {
 }
 
 section.projects .filter-buttons button:hover {
-    background-color: white;
-    color: white;
+    background-color: #e5533a;
     transform: scale(1.05);
 }
 
