@@ -241,6 +241,30 @@ section{
     font-size: 1.5em;
 }
 
+.filter-buttons {
+    text-align: center;
+    margin-top: 60px; /* adds space above the filter buttons */
+}
+
+.filter-buttons button {
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 50px; /* makes the buttons oval */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-buttons button:hover {
+    background-color: #e5533a;
+    transform: scale(1.05);
+}
+
+
 .footer{
     background-color: #260001;
     color: #fff;
