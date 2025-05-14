@@ -123,8 +123,12 @@ section{
     transform: translateX(-50%);
     transition: transform 0.5s ease;
     display: inline-block;
-    border-radius: 50%; 
+    
     object-fit: cover;
+}
+
+.images img .my-pic{
+    border-radius: 50%; 
 }
 
 .images:hover .shape{
