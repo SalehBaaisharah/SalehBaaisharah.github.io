@@ -131,7 +131,7 @@ section{
 }
 
 .images:hover .my-pic{
-    size: 10%;
+    transform: translateX(-60%) scale(1.1);
 }
 
 .title{
