@@ -131,6 +131,10 @@ section{
     object-fit: cover;
 }
 
+.shape {
+    transform: scale(1.2); /* Increase the size by 20% */
+}
+
 .images:hover .shape{
     bottom: 60px;
 }
