@@ -116,7 +116,6 @@ section{
 
 .images img{
     height: 100%;
-    width: 100%; /* Optional: ensures square if the container is square */
     position: absolute;
     left: 50%;
     top: 0;
