@@ -132,7 +132,9 @@ section{
 }
 
 .shape {
-    transform: scale(1.2); /* Increase the size by 20% */
+    width: 120%;
+    height: auto;
+
 }
 
 .images:hover .shape{
