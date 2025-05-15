@@ -10,6 +10,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+});
+
 
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project-card");
