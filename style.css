@@ -43,6 +43,25 @@ header {
     border-color: #A37E5B;
 }
 
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+body.dark header {
+    background-color: #1e1e1e;
+}
+body.dark .card, body.dark .project-card {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+body.dark .main-btn {
+    background-color: #bb86fc;
+}
+body.dark .navigation a {
+    color: #bb86fc;
+}
+
+
 section{
     padding: 100px 150px;
 }
