@@ -14,7 +14,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
 
-function openModal(projectTitle) {
+/*function openModal(projectTitle) {
     const content = {
         "Smart Chili Farm Automation": `
             <h2>Smart Chili Farm Automation</h2>
@@ -24,20 +24,29 @@ function openModal(projectTitle) {
     };
     document.getElementById('modal-content').innerHTML = content[projectTitle] || "No info available.";
     document.getElementById('modal').style.display = "flex";
-}
+}*/
 
 
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project-card");
     if (category == 'all') {
         projects.forEach(project => {
-            project.style.display = "block";
+            project.style.opacity = "0";
+            setTimeout(() => {
+                project.style.display = "block";
+                project.style.opacity = "1";
+            }, 100);
+
         });
     } else {
         projects.forEach(project => {
             let projectCategory = project.querySelector(".project-category").textContent.toLowerCase();
             if (projectCategory.includes(category.toLowerCase())) {
-                project.style.display = "block";
+                project.style.opacity = "0";
+                setTimeout(() => {
+                    project.style.display = "block";
+                    project.style.opacity = "1";
+                }, 100);
             } else {
                 project.style.display = "none";
             }
