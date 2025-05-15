@@ -14,6 +14,18 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
 
+function openModal(projectTitle) {
+    const content = {
+        "Smart Chili Farm Automation": `
+            <h2>Smart Chili Farm Automation</h2>
+            <p>Designed an autonomous robot to automate chili farming.</p>
+            <p><b>Tech:</b> Webots, C, IoT Sensors</p>
+        `
+    };
+    document.getElementById('modal-content').innerHTML = content[projectTitle] || "No info available.";
+    document.getElementById('modal').style.display = "flex";
+}
+
 
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project-card");
