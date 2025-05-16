@@ -17,9 +17,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 150px;
-    /* opacity: 0.5; */
 }
 
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  
 .logo{
     text-decoration: none;
     color: #A37E5B;
@@ -54,14 +58,60 @@ body.dark .card, body.dark .project-card {
     background-color: #1f1f1f;
     color: #fff;
 }
-body.dark .main-btn {
-    background-color: #bb86fc;
-}
-body.dark .navigation a {
-    color: #bb86fc;
+
+body.dark .main h3, body.dark .main h4{
+    color:#A37E5B
 }
 
+body.dark .project-info .project-link{
+    color: #2CB1BC;
+}
 
+body.dark .projects{
+    background-color:#1A1A1A;
+}
+
+body.dark .contact-cards h3, body.dark .contact-cards p{
+    color:#ccc;
+}
+body.dark .social-icons a{
+    color:#ccc;
+}
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .switch-icon {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/ios-filled/20/sun--v1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+  }
+  
+  #theme-toggle:checked + .toggle-switch {
+    background-color: #333;
+  }
+  
+  #theme-toggle:checked + .toggle-switch .switch-icon {
+    transform: translateX(30px);
+    background-image: url("https://img.icons8.com/ios-filled/20/moon-symbol.png");
+  }
+    
 section{
     padding: 100px 150px;
 }
@@ -69,9 +119,7 @@ section{
 .main{
     width: 100%;
     min-height: 100vh;
-    /* display: flex; */
     align-items: center;
-    /* background: url(me.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -269,7 +317,7 @@ section{
 
 section.projects .filter-buttons {
     text-align: center;
-    margin-top: 60px; /* Space between project cards and buttons */
+    margin-top: 60px; 
 }
 
 section.projects .filter-buttons button {
@@ -278,7 +326,7 @@ section.projects .filter-buttons button {
     border: none;
     padding: 10px 25px;
     margin: 10px 8px;
-    border-radius: 50px; /* Makes it oval */
+    border-radius: 50px; 
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
@@ -304,7 +352,7 @@ section.projects .filter-buttons button:hover {
     color: #a9a9a9;
     font-size: 1.6em;
 }
-/* To make the website responsive */
+
 
 @media (max-width:1023px){
     header{
