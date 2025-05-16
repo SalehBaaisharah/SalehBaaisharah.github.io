@@ -1,5 +1,5 @@
 
-// Smooth scrolling
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -10,23 +10,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.getElementById('theme-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark');
+// Theme toggle logic
+const themeToggle = document.getElementById('theme-toggle');
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    themeToggle.checked = true;
+}
+
+themeToggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
 });
 
-/*function openModal(projectTitle) {
-    const content = {
-        "Smart Chili Farm Automation": `
-            <h2>Smart Chili Farm Automation</h2>
-            <p>Designed an autonomous robot to automate chili farming.</p>
-            <p><b>Tech:</b> Webots, C, IoT Sensors</p>
-        `
-    };
-    document.getElementById('modal-content').innerHTML = content[projectTitle] || "No info available.";
-    document.getElementById('modal').style.display = "flex";
-}*/
 
-
+// Filter projects by category
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project-card");
     if (category == 'all') {
