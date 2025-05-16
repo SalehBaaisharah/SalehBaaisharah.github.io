@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Name</title>
-    <link rel = "icon" href = "images/me1.png" type = "image/x-icon" > 
+    <title>Saleh</title>
+    <link rel = "icon" href = "images/favicon.png" type = "image/x-icon" > 
 </head>
 <body>
     <header>
@@ -17,14 +17,17 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button id="theme-toggle" style="margin-left: 20px;">🌓</button>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="toggle-switch">
+            <span class="switch-icon"></span>
+        </label>
 
     </header>
 
     <section class="main" id="home">
         <h4>Hello, I'm Saleh</h4><br>
         <h1>Mechatronics Engineer</h1><br>
-        <h3>Mechatronics Engineer Shaping IoT Future</h3> <!--Innovating Robotics & IoT Solutions for a Smarter World-->
+        <h3>Innovating Robotics & IoT Solutions for a Smarter World</h3>
         <a href="#projects" class="main-btn">View my work</a>
         <div class="social-icons">
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -80,7 +83,6 @@
                     <p>Developing embedded and automation software in Python, and C/C++. Includes IoT dashboards, data logging, and real-time control for smart systems.</p>
                 </div>
             </div>
-
             <!-- IoT & Cloud Integration -->
             <div class="card">
                 <div class="icon">
@@ -107,43 +109,9 @@
                     <p><strong>Technologies:</strong> Webots, C (programming language), IoT Sensors</p>
                     <p><strong>Challenge:</strong> Efficiently integrating various sensors to create a reliable automated system.<br><strong>Solution:</strong> Developed custom sensor fusion algorithms for real-time data processing and decision-making.</p>
                     <a href="https://github.com/SalehBaaisharah/ChiliFarmRobot-ObstacleAvoidance" class="project-link">View Detailed Project</a>
-                    <!--<a href="javascript:void(0)" class="project-link" onclick="openModal('Smart Chili Farm Automation')">View Details</a>-->
+                </div>
+            </div>
 
-                </div>
-            </div>
-            <!--<div class="project-card">
-                <div class="project-image">
-                    <img src="images/me1.png"/>
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Mechanical</p>
-                    <strong class="project-title">
-                        Project Title 2
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/me1.png"/>
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Electronics</p>
-                    <strong class="project-title">
-                        Project Title 3
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/me.jpg"/>
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Software</p>
-                    <strong class="project-title">
-                        Project Title 4
-                    </strong>
-                </div>
-            </div>-->
         </div>
         <div class="filter-buttons">
             <button onclick="filterProjects('all')">All</button>
@@ -151,17 +119,9 @@
             <button onclick="filterProjects('Mechanical')">Mechanical</button>
             <button onclick="filterProjects('Electronics')">Electronics</button>
             <button onclick="filterProjects('Software')">Software</button>
-            <!-- Add more buttons for each category -->
         </div>
     </section>
-    <!--<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:1000; align-items: center; justify-content: center;">
-        <div style="background:#fff; padding:20px; border-radius:10px; max-width:600px; position: relative;">
-            <span onclick="document.getElementById('modal').style.display='none'" style="position:absolute;top:10px;right:20px;cursor:pointer;font-size:20px;">&times;</span>
-            <div id="modal-content">Loading...</div>
-        </div>
-    </div>-->
-
-    
+        
     <section class="contact-cards" id="contact">
         <h2 class="title">Let's Connect</h2>
         <div class="content"> 
