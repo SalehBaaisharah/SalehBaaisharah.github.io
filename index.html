@@ -153,7 +153,13 @@
             <a href="#"><i class="fa-solid fa-at"></i></a>
         </div>
         <br>
-        <p>Copyright &#169; 2025 Designed & Built by Saleh Saeed. All rights reserved.</p>        
+<!--         <p>Copyright &#169; 2025 Designed & Built by Saleh Saeed. All rights reserved.</p>         -->
+        <p>© <span id="year"></span> Saleh Saeed. All rights reserved.</p>
+
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
     </footer>
     
     <script src="JS.js"></script>
